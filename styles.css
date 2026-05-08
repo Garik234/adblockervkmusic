@@ -1,0 +1,67 @@
+/* styles.css — статическое скрытие наиболее стабильных рекламных
+   блоков VK на уровне CSS. Срабатывает мгновенно (до запуска JS),
+   что устраняет «мигание» рекламы на старте загрузки страницы.
+   Селекторы синхронизированы с CONFIG.selectors из content.js. */
+
+/* Аудио-промо и подписка VK Музыка */
+.audio_promo,
+.audio_subscribe_promo,
+.audio_subscribe_promo__content,
+.audio_ads,
+.audio_row_ads,
+.audio_page_block_promo,
+.CatalogBlock__subscription,
+.CatalogBlock--subscription,
+[data-testid="audio_promo"],
+[data-block-type="audio_subscribe_promo"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Боковые баннеры и рекламные блоки */
+#ads_left,
+.ads300-thumb,
+.ads600x200,
+.ads_600x200,
+.trg-b-banner-block,
+.ads_ads_box,
+.ads_ads_news_wrap,
+._ads_block_data_w {
+  display: none !important;
+}
+
+/* Промо VK Pay / настройки */
+.settings_vkpay_promo_banner_link_a,
+#settings_ps_promo_big_banner_container {
+  display: none !important;
+}
+
+/* Рекламные посты в ленте */
+div[id^="post-"][data-ad-block-uid],
+.post[data-ad],
+.post[data-ad-view],
+.wall_marked_as_ads,
+.post_marked_as_ads {
+  display: none !important;
+}
+
+/* Блоки рекомендаций и видеореклама */
+.GroupsRecommendationsBlock,
+.FriendsSuggestionsBlock,
+#feed_recommends,
+.RecommendedNarrativesBlock,
+#friends_right_blocks_root,
+.FeedVideosForYou,
+.ShortVideoFeedBlock {
+  display: none !important;
+}
+
+/* Медиа из рекламной CDN */
+div[data-mt-video-hls*="mradx.net"],
+img[src^="https://r0.mradx.net"] {
+  display: none !important;
+}

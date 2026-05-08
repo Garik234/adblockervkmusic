@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||vk.com/ads_rotate",
+      "resourceTypes": ["xmlhttprequest", "sub_frame", "script", "image"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||vk.ru/ads_rotate",
+      "resourceTypes": ["xmlhttprequest", "sub_frame", "script", "image"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "ads_section",
+      "domains": ["vk.com", "vk.ru"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "act=need_show_promo",
+      "domains": ["vk.com", "vk.ru"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "act=ad_event",
+      "domains": ["vk.com", "vk.ru"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "act=audio_ads",
+      "domains": ["vk.com", "vk.ru"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||ads.vk.com",
+      "resourceTypes": ["xmlhttprequest", "sub_frame", "script", "image"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||ad.mail.ru",
+      "resourceTypes": ["xmlhttprequest", "sub_frame", "script", "image"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||top-fwz1.mail.ru",
+      "resourceTypes": ["xmlhttprequest", "image", "script"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||rs.mail.ru",
+      "resourceTypes": ["xmlhttprequest", "image", "script"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||r.mradx.net",
+      "resourceTypes": ["xmlhttprequest", "image", "script"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||mradx.net",
+      "resourceTypes": ["xmlhttprequest", "image", "script", "media"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||trg.mail.ru",
+      "resourceTypes": ["xmlhttprequest", "image", "script"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||target.my.com",
+      "resourceTypes": ["xmlhttprequest", "image", "script", "sub_frame"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||an.yandex.ru",
+      "resourceTypes": ["xmlhttprequest", "image", "script", "sub_frame"]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "act=show_audio_ads_stat",
+      "domains": ["vk.com", "vk.ru"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]

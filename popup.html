@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>VK Music Ad Blocker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="icons/icon48.png" alt="" class="logo" />
+    <div class="title-block">
+      <h1>VK Music Ad Blocker</h1>
+      <p class="version" id="version">v-</p>
+    </div>
+  </header>
+
+  <section class="toggle-row">
+    <span class="toggle-label">Защита включена</span>
+    <label class="switch">
+      <input type="checkbox" id="enabled-toggle" />
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <div class="stat-value" id="stat-session">0</div>
+      <div class="stat-label">за сессию</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value" id="stat-total">0</div>
+      <div class="stat-label">всего</div>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button id="reset-btn" class="btn-secondary">Сбросить статистику</button>
+  </section>
+
+  <footer class="footer">
+    <span id="status">Готово</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
